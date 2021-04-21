@@ -20,9 +20,6 @@
     cursor: pointer;
 }
 
-h1:hover {
-    cursor: pointer;
-}
 button:hover {
     transform: scale(1.1);
 }
@@ -38,13 +35,15 @@ button:hover {
         display: block;
         font-size: 40px;
     }
+
+    .header {
+        font-size: 20px;
+    }
     
     .header img {
         height: fit-content;
         width: fit-content;
-        margin-top: auto;
-        justify-content: center;
-        padding-top: 40px;
+        margin: 0;
     }
 }
 /*about page */
@@ -81,7 +80,8 @@ button:hover {
 .about-me {
     text-align: center;
     font-family: 'Oxygen', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+    margin: 40px;
 }
 
 .about-me img{
@@ -130,8 +130,8 @@ button:hover {
 }
 
 .project-text{
-    font-family: 'Oxygen', sans-serif;
-    font-size: 23px;
+    font-family: sans-serif;
+    font-size: 18px;
 }
 a {
     text-decoration: none;
@@ -155,7 +155,7 @@ a {
 @media screen and (max-width: 600px) {
     .Projects img{
         height: 200px;
-        width: 380px;
+        width: 370px;
         justify-content: center;
     }
 }
@@ -171,6 +171,12 @@ a {
     width: 500px;
     border-radius: 4px;
     border-color: rgb(68, 143, 255);
+}
+
+@media screen and (max-width: 600px) {
+    .contact-me input{
+        width: 100%;
+    }
 }
 
 .contact-me button{
